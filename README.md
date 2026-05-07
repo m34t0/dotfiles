@@ -33,6 +33,9 @@ Then push:
 
 Profit
 
+WARNING: DON'T USE `dotfiles add .` OR ALL THE FILES IN THE CURRENT DIR
+WILL BE ADDED TO YOUR DOTFILES
+
 ### Links
 XDG - https://specifications.freedesktop.org/basedir/latest/
 Bare git repo for dotfiles - https://www.atlassian.com/git/tutorials/dotfiles

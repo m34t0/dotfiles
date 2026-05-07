@@ -17,14 +17,17 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 #	enable homebrew llvm tools (clang etc.) first
 #	to use them instead of macos from xcode tools
 #	then add docker and go binaries
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH:$HOME/.docker/bin:$GOPATH/bin"
+# export PATH="/opt/homebrew/opt/llvm/bin:$PATH:$HOME/.docker/bin:$GOPATH/bin"
+# 	or do the standard
+export PATH="$PATH:$HOME/.docker/bin:$GOPATH/bin"
 
 
 
 #	===================== LLVM
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-export CMAKE_PREFIX_PATH="/opt/homebrew/opt/llvm"
+#	stays here in case i have to use homebrew llvm
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+# export CMAKE_PREFIX_PATH="/opt/homebrew/opt/llvm"
 
 #	===================== OTHER THINGS
 # oglog script executing and variables
