@@ -1,0 +1,8 @@
+[user]
+	name = m34t0
+	email = m3atyy@gmail.com
+[core]
+	filemode = false
+	editor = nvim
+[init]
+	defaultBranch = master
