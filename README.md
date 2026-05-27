@@ -11,13 +11,13 @@ Clone dotfiles into bare repo:
     `git clone --bare git@github.com:m34t0/dotfiles.git $HOME/dotfiles`
 
 Add alias for current shell scope:
-    `alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'`
+    `alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"`
 
 Checkout to current version of dotfiles:
     `dotfiles checkout`
 
 Add some config to bare repo:
-    `config config --local status.showUntrackedFiles no`
+    `dotfiles config --local status.showUntrackedFiles no`
 
 ### Usage
 To add config file to dotfiles use alias:
@@ -33,8 +33,7 @@ Then push:
 
 Profit
 
-WARNING: DON'T USE `dotfiles add .` OR ALL THE FILES IN THE CURRENT DIR
-WILL BE ADDED TO YOUR DOTFILES
+WARNING: `dotfiles add .` ADDS ALL THE FILES IN THE CURRENT DIR
 
 ### Links
 XDG - https://specifications.freedesktop.org/basedir/latest/
