@@ -18,7 +18,8 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 #	to use them instead of macos from xcode tools
 #	then add docker and go binaries
 # export PATH="/opt/homebrew/opt/llvm/bin:$PATH:$HOME/.docker/bin:$GOPATH/bin"
-# 	or do the standard
+
+# or do the docker and go
 export PATH="$PATH:$HOME/.docker/bin:$GOPATH/bin"
 
 
