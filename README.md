@@ -31,10 +31,14 @@ Then commit:
 Then push:
     `dotfiles push`
 
+To update branch:
+    `dotfiles fetch origin <branch>:<branch>`
+
 Profit
 
 WARNING: `dotfiles add .` ADDS ALL THE FILES IN THE CURRENT DIR
 
 ### Links
 XDG - https://specifications.freedesktop.org/basedir/latest/
+
 Bare git repo for dotfiles - https://www.atlassian.com/git/tutorials/dotfiles
