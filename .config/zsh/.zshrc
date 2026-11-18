@@ -1,3 +1,6 @@
+#	===================== VARABLES
+export M34T_HOME="$HOME/.local/m34t"
+
 #	===================== COCOAPODS
 export CP_HOME_DIR="$XDG_DATA_HOME/cocoapods"
 
@@ -8,10 +11,10 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/.npmrc"
 export GOPATH="$HOME/.local/go"
 
 #	===================== ALIASES
+alias goho="cd $M34T_HOME"
 alias gls="git log --oneline --graph --all --decorate -20"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
-
-
+alias love="$M34T_HOME/tools/love/love.app/Contents/MacOS/love"
 
 #	===================== PATH
 #	enable homebrew llvm tools (clang etc.) first
@@ -21,8 +24,6 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 
 # or do the docker and go
 export PATH="$PATH:$HOME/.docker/bin:$GOPATH/bin"
-
-
 
 #	===================== LLVM
 #	stays here in case i have to use homebrew llvm
